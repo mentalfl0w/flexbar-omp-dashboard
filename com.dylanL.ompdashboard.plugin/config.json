@@ -1,0 +1,12 @@
+{
+  "dbPath": "~/.omp/stats.db",
+  "refreshInterval": 5000,
+  "currency": "USD",
+  "liveWidth": 720,
+  "showToday": true,
+  "showSevenDay": true,
+  "showModels": true,
+  "showAgents": true,
+  "showRecent": true,
+  "showLive": true
+}

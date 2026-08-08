@@ -1,0 +1,264 @@
+{
+  "name": "OMP Dashboard",
+  "uuid": "com.dylanL.ompdashboard",
+  "version": "1.0.0",
+  "author": "OMP",
+  "entry": "backend/plugin.cjs",
+  "description": "Display oh-my-pi (OMP) LLM usage statistics on Flexbar: token consumption, cost, model distribution, agent activity, and live monitoring.",
+  "repo": "",
+  "configPage": "",
+  "platform": [
+    "mac",
+    "windows",
+    "linux"
+  ],
+  "keyLibrary": {
+    "title": "OMP Dashboard",
+    "style": {
+      "icon": "mdi mdi-chart-line"
+    },
+    "children": [
+      {
+        "title": "$OverviewStrip.Title",
+        "tip": "$OverviewStrip.Tip",
+        "cid": "com.dylanL.ompdashboard.overviewstrip",
+        "config": {
+          "keyType": "directDraw",
+          "clickable": true,
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ]
+        },
+        "style": {
+          "icon": "mdi mdi-chart-line",
+          "width": 240
+        },
+        "data": {}
+      },
+      {
+        "title": "$Today.Title",
+        "tip": "$Today.Tip",
+        "cid": "com.dylanL.ompdashboard.today",
+        "config": {
+          "keyType": "standard",
+          "clickable": true,
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ]
+        },
+        "style": {
+          "icon": "mdi mdi-calendar-today",
+          "width": 320
+        },
+        "data": {}
+      },
+      {
+        "title": "$SevenDay.Title",
+        "tip": "$SevenDay.Tip",
+        "cid": "com.dylanL.ompdashboard.sevenday",
+        "config": {
+          "keyType": "standard",
+          "clickable": true,
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ]
+        },
+        "style": {
+          "icon": "mdi mdi-chart-line-variant",
+          "width": 480
+        },
+        "data": {}
+      },
+      {
+        "title": "$Models.Title",
+        "tip": "$Models.Tip",
+        "cid": "com.dylanL.ompdashboard.models",
+        "config": {
+          "keyType": "dynamic",
+          "clickable": false,
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ]
+        },
+        "style": {
+          "icon": "mdi mdi-format-list-bulleted",
+          "width": 240
+        },
+        "data": {
+          "subkeyNum": 0
+        }
+      },
+      {
+        "title": "$Agents.Title",
+        "tip": "$Agents.Tip",
+        "cid": "com.dylanL.ompdashboard.agents",
+        "config": {
+          "keyType": "standard",
+          "clickable": true,
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ]
+        },
+        "style": {
+          "icon": "mdi mdi-account-group",
+          "width": 320
+        },
+        "data": {}
+      },
+      {
+        "title": "$Recent.Title",
+        "tip": "$Recent.Tip",
+        "cid": "com.dylanL.ompdashboard.recent",
+        "config": {
+          "keyType": "dynamic",
+          "clickable": false,
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ]
+        },
+        "style": {
+          "icon": "mdi mdi-history",
+          "width": 240
+        },
+        "data": {
+          "subkeyNum": 0
+        }
+      },
+      {
+        "title": "$Live.Title",
+        "tip": "$Live.Tip",
+        "cid": "com.dylanL.ompdashboard.live",
+        "config": {
+          "keyType": "standard",
+          "clickable": true,
+          "platform": [
+            "mac",
+            "windows",
+            "linux"
+          ]
+        },
+        "style": {
+          "icon": "mdi mdi-pulse",
+          "width": 480
+        },
+        "data": {}
+      }
+    ]
+  },
+  "local": {
+    "en": {
+      "Folder": {
+        "Title": "OMP Dashboard",
+        "Tip": "Oh My Pi usage statistics"
+      },
+      "Today": {
+        "Title": "Today",
+        "Tip": "Today's OMP usage overview"
+      },
+      "SevenDay": {
+        "Title": "7-Day Trend",
+        "Tip": "7-day cost and token trend"
+      },
+      "Models": {
+        "Title": "Models",
+        "Tip": "Model distribution (last 7 days)"
+      },
+      "Agents": {
+        "Title": "Agents",
+        "Tip": "Agent type distribution"
+      },
+      "Recent": {
+        "Title": "Recent",
+        "Tip": "Recent LLM call records"
+      },
+      "Live": {
+        "Title": "Live",
+        "Tip": "Real-time OMP monitoring"
+      },
+      "Strip": {
+        "Title": "Overview Strip",
+        "Tip": "Full-width aggregate usage overview"
+      },
+      "OverviewStrip": {
+        "Title": "Overview",
+        "Tip": "Tap to view full usage dashboard"
+      }
+    },
+    "zh-CN": {
+      "Folder": {
+        "Title": "OMP \u4eea\u8868\u76d8",
+        "Tip": "Oh My Pi \u4f7f\u7528\u7edf\u8ba1"
+      },
+      "Today": {
+        "Title": "\u4eca\u65e5",
+        "Tip": "\u4eca\u65e5 OMP \u4f7f\u7528\u6982\u89c8"
+      },
+      "SevenDay": {
+        "Title": "7\u5929\u8d8b\u52bf",
+        "Tip": "7\u5929\u8d39\u7528\u4e0e Token \u8d8b\u52bf"
+      },
+      "Models": {
+        "Title": "\u6a21\u578b",
+        "Tip": "\u6a21\u578b\u5206\u5e03\uff08\u8fd17\u5929\uff09"
+      },
+      "Agents": {
+        "Title": "Agent",
+        "Tip": "Agent \u7c7b\u578b\u5206\u5e03"
+      },
+      "Recent": {
+        "Title": "\u6700\u8fd1",
+        "Tip": "\u6700\u8fd1 LLM \u8c03\u7528\u8bb0\u5f55"
+      },
+      "Live": {
+        "Title": "\u5b9e\u65f6",
+        "Tip": "OMP \u5b9e\u65f6\u76d1\u63a7"
+      },
+      "Strip": {
+        "Title": "\u603b\u89c8\u6761",
+        "Tip": "\u5168\u5bbd\u805a\u5408\u4f7f\u7528\u603b\u89c8"
+      },
+      "OverviewStrip": {
+        "Title": "\u603b\u89c8",
+        "Tip": "\u70b9\u51fb\u67e5\u770b\u5b8c\u6574\u4f7f\u7528\u4eea\u8868\u76d8"
+      }
+    }
+  },
+  "sdk": {
+    "version": "1.0.9"
+  },
+  "software": {
+    "minimumVersion": "2.0.0"
+  },
+  "os": [
+    {
+      "platform": "mac",
+      "minimumVersion": "26.0"
+    },
+    {
+      "platform": "windows",
+      "minimumVersion": "10.0"
+    },
+    {
+      "platform": "linux",
+      "minimumVersion": "5.0"
+    }
+  ],
+  "device": [
+    {
+      "name": "flexbar",
+      "version": "1.0.0"
+    }
+  ]
+}
