@@ -1,7 +1,7 @@
 {
   "name": "OMP Dashboard",
   "uuid": "com.dylanL.ompdashboard",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Dylan Liu",
   "entry": "backend/plugin.cjs",
   "description": "Display oh-my-pi (OMP) LLM usage statistics on Flexbar: token consumption, cost, model distribution, agent activity, and live monitoring.",
